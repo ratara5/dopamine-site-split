@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <rect width="1200" height="400" fill="#09090B" rx="24"/>
+  <!-- Comic Header Panels -->
+  <path d="M 0,0 L 380,0 L 320,400 L 0,400 Z" fill="#16A34A" opacity="0.8"/>
+  <path d="M 400,0 L 820,0 L 760,400 L 340,400 Z" fill="#22C55E"/>
+  <polygon points="900,50 1150,20 1100,180 1180,350 880,320 920,200" fill="#4ADE80" stroke="#000" stroke-width="6"/>
+  <text x="600" y="220" font-family="Impact, sans-serif" font-size="90" fill="#FFF" stroke="#000" stroke-width="4" text-anchor="middle">URBAN COMICS</text>
+</svg>

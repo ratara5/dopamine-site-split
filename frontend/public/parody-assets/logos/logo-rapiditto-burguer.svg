@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#FFF5F5" rx="16"/>
+  <!-- Crayon Burger Silhouette -->
+  <path d="M 50,110 C 50,60 206,60 206,110 Z" fill="#E53E3E" stroke="#9B2C2C" stroke-width="6" stroke-dasharray="12 4 4 4" stroke-linecap="round"/>
+  <path d="M 40,125 Q 60,115 80,125 T 120,125 T 160,125 T 200,125 T 216,125" fill="none" stroke="#E53E3E" stroke-width="8" stroke-linecap="round"/>
+  <rect x="45" y="138" width="166" height="22" rx="11" fill="#C53030"/>
+  <path d="M 55,170 Q 128,185 201,170 Q 128,210 55,170 Z" fill="#E53E3E" stroke="#9B2C2C" stroke-width="5" stroke-dasharray="8 4"/>
+</svg>

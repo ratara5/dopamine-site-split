@@ -1,0 +1,18 @@
+{
+  "common": {
+    "appName": "NoLlegaYa",
+    "disclaimer": "Sitio de simulación/parodia. No se realizan cobros ni entregas reales. No afiliado con marcas reales.",
+    "addToCart": "Agregar",
+    "checkout": "Confirmar pedido",
+    "loading": "Cargando..."
+  },
+  "home": {
+    "title": "¿Qué antojo simulamos hoy?"
+  },
+  "order": {
+    "inTransit": "Tu pedido va en camino (simulado)",
+    "delivered": "¡Pedido entregado!",
+    "moneySaved": "Te ahorraste",
+    "calorieSaved": "Evitaste"
+  }
+}

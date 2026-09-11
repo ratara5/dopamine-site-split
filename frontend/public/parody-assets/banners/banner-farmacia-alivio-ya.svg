@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <rect width="1200" height="400" fill="#EBF8FF" rx="24"/>
+  <!-- Decorative background circles -->
+  <circle cx="1100" cy="80" r="220" fill="#BEE3F8" opacity="0.5"/>
+  <circle cx="100" cy="320" r="180" fill="#90CDF4" opacity="0.3"/>
+  
+  <!-- Health Cross Graphic -->
+  <g transform="translate(160, 110)">
+    <circle cx="90" cy="90" r="80" fill="#3182CE"/>
+    <path d="M 80,45 h20 v35 h35 v20 h-35 v35 h-20 v-35 h-35 v-20 h35 z" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Banner Text -->
+  <text x="380" y="190" font-family="Arial, sans-serif" font-weight="bold" font-size="64" fill="#2B6CB0">HEALTH &amp; WELLNESS</text>
+  <text x="380" y="250" font-family="Arial, sans-serif" font-size="28" fill="#4299E1">Care, Protection &amp; Medical Solutions</text>
+  <line x1="380" y1="280" x2="850" y2="280" stroke="#3182CE" stroke-width="4" stroke-linecap="round"/>
+</svg>

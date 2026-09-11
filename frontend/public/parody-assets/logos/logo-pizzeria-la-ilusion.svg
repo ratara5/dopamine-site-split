@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#FFFAF0" rx="16"/>
+  <circle cx="128" cy="128" r="90" fill="#ED8936" opacity="0.15"/>
+  <!-- Cloche / Gourmet Food Icon -->
+  <path d="M 58,150 A 70,70 0 0,1 198,150 Z" fill="#ED8936"/>
+  <circle cx="128" cy="72" r="10" fill="#DD6B20"/>
+  <rect x="48" y="154" width="160" height="12" rx="6" fill="#DD6B20"/>
+</svg>

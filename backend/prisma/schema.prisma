@@ -1,0 +1,155 @@
+// Prisma schema for the parody "dopamine site" delivery simulator.
+// IMPORTANT: This models a SIMULATION. No field here represents a real
+// payment, a real courier, or a real business. `priceCents` on an Order
+// is a number shown to the user for the fantasy/payoff loop only —
+// it is never charged anywhere in this codebase.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ProviderType {
+  RESTAURANT
+  MARKET
+  PHARMACY
+  LIQUOR
+}
+
+enum OrderStatus {
+  PLACED
+  CONFIRMED
+  PREPARING
+  ON_THE_WAY
+  DELIVERED
+  CANCELLED
+}
+
+model User {
+  id            String         @id @default(cuid())
+  name          String
+  email         String         @unique
+  passwordHash  String
+  avatarUrl     String?
+  createdAt     DateTime       @default(now())
+  orders        Order[]
+  favorites     Favorite[]
+  savingsEntries SavingsEntry[]
+}
+
+// A fictional/parody restaurant, market, pharmacy, etc.
+// `name`, `logoUrl`, `bannerUrl` must always be original parody assets —
+// never a modified real brand's logo or photography.
+model Provider {
+  id         String       @id @default(cuid())
+  name       String
+  type       ProviderType
+  logoUrl    String
+  bannerUrl  String
+  ratingAvg  Float        @default(4.5)
+  etaMinutes Int          @default(30)
+  createdAt  DateTime     @default(now())
+  categories Category[]
+  products   Product[]
+}
+
+model Category {
+  id         String    @id @default(cuid())
+  name       String
+  providerId String
+  provider   Provider  @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  products   Product[]
+}
+
+model Product {
+  id          String     @id @default(cuid())
+  name        String
+  description String
+  priceCents  Int
+  kcal        Int?       // used to compute the "calories saved" payoff message
+  imageUrl    String
+  providerId  String
+  provider    Provider   @relation(fields: [providerId], references: [id], onDelete: Cascade)
+  categoryId  String
+  category    Category   @relation(fields: [categoryId], references: [id])
+  reviews     Review[]
+  favorites   Favorite[]
+  orderItems  OrderItem[]
+}
+
+model Review {
+  id          String   @id @default(cuid())
+  productId   String
+  product     Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  authorAlias String   // always a fictional reviewer name
+  rating      Int
+  comment     String
+  createdAt   DateTime @default(now())
+}
+
+// A "fake order" — the emotional core of the product.
+// Placing one never calls a payment provider. It starts a simulated
+// courier journey (see TrackingPoint) that always ends in a SavingsEntry.
+model Order {
+  id         String          @id @default(cuid())
+  userId     String
+  user       User            @relation(fields: [userId], references: [id])
+  providerId String
+  status     OrderStatus     @default(PLACED)
+  totalCents Int
+  createdAt  DateTime        @default(now())
+  items      OrderItem[]
+  tracking   TrackingPoint[]
+  savings    SavingsEntry?
+}
+
+model OrderItem {
+  id                String  @id @default(cuid())
+  orderId           String
+  order             Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId         String
+  product           Product @relation(fields: [productId], references: [id])
+  quantity          Int
+  priceCentsAtOrder Int
+}
+
+// One row per simulated courier position. Written by the internal
+// cron endpoint (see app/api/internal/simulate-tracking), read by the
+// polling endpoint the client hits every few seconds.
+model TrackingPoint {
+  id        String   @id @default(cuid())
+  orderId   String
+  order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  lat       Float
+  lng       Float
+  sequence  Int
+  timestamp DateTime @default(now())
+}
+
+// The "reward for not spending" record — this is the feature the whole
+// product exists to deliver. Written once, when an order simulation
+// completes.
+model SavingsEntry {
+  id              String   @id @default(cuid())
+  orderId         String   @unique
+  order           Order    @relation(fields: [orderId], references: [id])
+  userId          String
+  user            User     @relation(fields: [userId], references: [id])
+  moneySavedCents Int
+  kcalSaved       Int
+  createdAt       DateTime @default(now())
+}
+
+model Favorite {
+  id        String  @id @default(cuid())
+  userId    String
+  user      User    @relation(fields: [userId], references: [id])
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+
+  @@unique([userId, productId])
+}

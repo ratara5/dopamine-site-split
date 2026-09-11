@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2.5" fill="#22C55E" opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="256" height="256" fill="#18181B" rx="16"/>
+  <rect width="256" height="256" fill="url(#dots)" rx="16"/>
+  <!-- Comic Burst & Urban Elements -->
+  <polygon points="128,20 155,80 220,60 180,115 236,156 170,165 175,230 128,180 81,230 86,165 20,156 76,115 36,60 101,80" fill="#22C55E" stroke="#000" stroke-width="6"/>
+  <text x="128" y="140" font-family="Impact, sans-serif" font-size="38" fill="#FFF" stroke="#000" stroke-width="2" text-anchor="middle" transform="rotate(-5 128 140)">POW!</text>
+</svg>

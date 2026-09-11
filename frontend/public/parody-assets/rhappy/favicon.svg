@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" style="background: transparent;">
+  <g id="happies-r-y-256" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 60 60 Q 60 50 55 50 Q 60 50 60 40 Q 60 50 65 50 Q 60 50 60 60 Z" fill="#f79c51" stroke="none" />
+    <path d="M 200 55 Q 200 47 195 47 Q 200 47 200 40 Q 200 47 205 47 Q 200 47 200 55 Z" fill="#f79c51" stroke="none" />
+    <circle cx="128" cy="50" r="3" fill="#f79c51" />
+    <path d="M 67.5 75 L 67.5 180" stroke="#f79c51" stroke-width="18" />
+    <path d="M 67.5 75 L 105 75 C 127.5 75 127.5 120 67.5 120" stroke="#f79c51" stroke-width="18" />
+    <path d="M 95 117.5 L 125 180" stroke="#f79c51" stroke-width="18" />
+    <path d="M 85 90 Q 89 85 93 90" stroke="#f79c51" stroke-width="3" fill="none" />
+    <path d="M 102 90 Q 106 85 110 90" stroke="#f79c51" stroke-width="3" fill="none" />
+    <path d="M 92.5 99 Q 97.5 105 102.5 99" stroke="#f79c51" stroke-width="3" fill="none" />
+    <circle cx="81.5" cy="96" r="3" fill="#f79c51" opacity="0.4" />
+    <circle cx="113.5" cy="96" r="3" fill="#f79c51" opacity="0.4" />
+    <path d="M 145 92.5 L 170 142.5" stroke="#f79c51" stroke-width="18" />
+    <path d="M 195 92.5 L 165 152.5 C 152.5 177.5 135 190 117.5 185" stroke="#f79c51" stroke-width="18" />
+    <path d="M 160 107.5 Q 164 102.5 168 107.5" stroke="#f79c51" stroke-width="3" fill="none" />
+    <path d="M 177 107.5 Q 181 102.5 185 107.5" stroke="#f79c51" stroke-width="3" fill="none" />
+    <path d="M 167.5 116.5 Q 172.5 122.5 177.5 116.5" stroke="#f79c51" stroke-width="3" fill="none" />
+    <circle cx="156" cy="113.5" r="3" fill="#f79c51" opacity="0.4" />
+    <circle cx="189" cy="113.5" r="3" fill="#f79c51" opacity="0.4" />
+  </g>
+</svg>

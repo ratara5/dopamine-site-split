@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#09090B" rx="32"/>
+  <circle cx="256" cy="256" r="200" fill="#15803D"/>
+  <polygon points="256,70 310,190 440,150 360,256 440,362 310,322 256,442 202,322 72,362 152,256 72,150 202,190" fill="#22C55E" stroke="#000" stroke-width="10"/>
+  <circle cx="256" cy="256" r="80" fill="#DC2626" stroke="#000" stroke-width="8"/>
+  <text x="256" y="280" font-family="Impact" font-size="72" fill="#FFF" text-anchor="middle">HERO</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <rect width="1200" height="400" fill="#F6E05E" rx="24"/>
+  <!-- Stripes -->
+  <path d="M 0,0 L 100,0 L 0,400 Z" fill="#ECC94B" opacity="0.5"/>
+  <path d="M 200,0 L 400,0 L 200,400 Z" fill="#ECC94B" opacity="0.5"/>
+  <path d="M 500,0 L 700,0 L 500,400 Z" fill="#ECC94B" opacity="0.5"/>
+  <path d="M 800,0 L 1000,0 L 800,400 Z" fill="#ECC94B" opacity="0.5"/>
+  <rect x="300" y="100" width="600" height="200" rx="20" fill="#FFFFFF" stroke="#D69E2E" stroke-width="8"/>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-weight="900" font-size="64" fill="#744210" text-anchor="middle">FRESH MARKET</text>
+</svg>

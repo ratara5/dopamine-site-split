@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" style="background: transparent;">
+  <g id="wordmark-ry-happies" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 115 105 Q 115 88 102 88 Q 115 88 115 70 Q 115 88 128 88 Q 115 88 115 105 Z" fill="#ff7300" />
+    <path d="M 405 95 Q 405 80 392 80 Q 405 80 405 65 Q 405 80 418 80 Q 405 80 405 95 Z" fill="#f79c51" />
+    <circle cx="256" cy="80" r="7" fill="#ff85a1" />
+    <circle cx="390" cy="330" r="5" fill="#f79c51" />
+    <path d="M 135 130 L 135 320" stroke="#f79c51" stroke-width="36" fill="none" />
+    <path d="M 135 130 L 210 130 C 255 130 255 220 135 220" stroke="#f79c51" stroke-width="36" fill="none" />
+    <path d="M 190 215 L 250 320" stroke="#f79c51" stroke-width="36" fill="none" />
+    <circle cx="178" cy="165" r="5" fill="#2b2d42" />
+    <circle cx="212" cy="165" r="5" fill="#2b2d42" />
+    <path d="M 187 180 Q 195 192 203 180" stroke="#2b2d42" stroke-width="4.5" fill="none" />
+    <circle cx="168" cy="175" r="6" fill="#ff85a1" />
+    <circle cx="222" cy="175" r="6" fill="#ff85a1" />
+    <path d="M 290 165 L 340 265" stroke="#ff7300" stroke-width="36" fill="none" />
+    <path d="M 390 165 L 330 285 C 305 335 270 360 235 350" stroke="#ff7300" stroke-width="36" fill="none" />
+    <circle cx="328" cy="195" r="5" fill="#2b2d42" />
+    <circle cx="362" cy="195" r="5" fill="#2b2d42" />
+    <path d="M 337 210 Q 345 222 353 210" stroke="#2b2d42" stroke-width="4.5" fill="none" />
+    <circle cx="318" cy="205" r="6" fill="#ff85a1" />
+    <circle cx="372" cy="205" r="6" fill="#ff85a1" />
+    <text x="256" y="440" text-anchor="middle" font-family="'Comfortaa', 'Fredoka', 'Quicksand', sans-serif" font-weight="700" font-size="42" letter-spacing="6" fill="#2b2d42">
+      HAPPIES
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#FEFCBF" rx="16"/>
+  <!-- Market Basket -->
+  <path d="M 80,90 L 100,50 L 156,50 L 176,90" fill="none" stroke="#D69E2E" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 50,90 L 65,190 Q 67,200 77,200 L 179,200 Q 189,200 191,190 L 206,90 Z" fill="#ECC94B" stroke="#D69E2E" stroke-width="6"/>
+  <line x1="85" y1="110" x2="95" y2="180" stroke="#B7791F" stroke-width="4"/>
+  <line x1="128" y1="110" x2="128" y2="180" stroke="#B7791F" stroke-width="4"/>
+  <line x1="171" y1="110" x2="161" y2="180" stroke="#B7791F" stroke-width="4"/>
+</svg>
